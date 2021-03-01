@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-     ptivate int myVariable;
+     ptivate int ourVariable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
