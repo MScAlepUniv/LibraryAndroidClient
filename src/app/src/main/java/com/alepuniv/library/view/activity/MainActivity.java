@@ -1,12 +1,14 @@
-package com.alepuniv.library;
+package com.alepuniv.library.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.alepuniv.library.R;
+
 public class MainActivity extends AppCompatActivity {
 
-     ptivate int ourVariable;
+     private int ourVariable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

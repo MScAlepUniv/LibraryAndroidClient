@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.alepuniv.library"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -28,6 +28,32 @@ android {
 }
 
 dependencies {
+
+
+    // Room components
+    implementation "androidx.room:room-runtime:2.2.5"
+    implementation 'androidx.wear:wear:1.1.0'
+    annotationProcessor "androidx.room:room-compiler:2.2.5"
+    androidTestImplementation "androidx.room:room-testing:2.2.5"
+
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.2.0"
+
+
+    // ImageCropper
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+
+    // RoundedImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // Glide Image Loading and Caching
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    // clans FAB
+    implementation 'com.github.clans:fab:1.6.4'
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
