@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="7dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgRecyclerPersonImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_person" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtRecyclerPersonFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Name : Jamil"
+                android:textColor="#570808"
+                android:textSize="25dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txtRecyclerPersonFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Father Name : Mazen"
+                android:textColor="#0B0B63"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtRecyclerPersonLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name : Abodan"
+                android:textColor="#0B0B63"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/txtRecyclerPersonAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="3"
+                android:maxLines="3"
+                android:text="Address : Syria Aleppo , Al-sha'ar  behind dar al-shifa'a hospital jbdsf jbdvj  jhbjsdv  jhdbvjhdbsv jvsdv hjhdsbvjb jhhbsdjvsjd javjsdbvj  "
+                android:textColor="#232327"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
