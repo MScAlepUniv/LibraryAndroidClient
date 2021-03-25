@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_book"
+    tools:context=".view.activity.StartActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBooksSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:elevation="50dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewBooksSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardViewBooksSearch"
+        android:background="#8FFF"
+        android:paddingTop="30dp"
+        tools:listitem="@layout/item_recycler_book" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        app:fab_colorNormal="#200F" />
+
+</RelativeLayout>

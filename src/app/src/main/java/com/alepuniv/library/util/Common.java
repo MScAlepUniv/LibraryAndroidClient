@@ -76,7 +76,7 @@ public class Common
                 .with(context)
                 .load(image)
                 .centerCrop()
-                .placeholder(R.drawable.ic_person)
+                .placeholder(R.drawable.img_book)
                 .into(imageView);
     }
 

@@ -12,6 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlepUnivLibrary">
+        <activity android:name=".view.activity.SignUpActivity"></activity>
+        <activity android:name=".view.activity.BooksActivity" />
+        <activity android:name=".view.activity.StartActivity" />
+        <activity android:name=".view.activity.LoginActivity" />
         <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
