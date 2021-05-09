@@ -12,11 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AlepUnivLibrary">
-        <activity android:name=".view.activity.SignUpActivity"></activity>
+        <activity android:name=".view.activity.PublishedCopiesActivity"></activity>
+        <activity android:name=".view.activity.PublisherAuthorActivity" />
+        <activity android:name=".view.activity.KindInfoActivity" />
+        <activity android:name=".view.activity.KindAddActivity" />
+        <activity android:name=".view.activity.KindActivity" />
+        <activity android:name=".view.activity.PublishedInfoActivity" />
+        <activity android:name=".view.activity.PublishedMajorActivity" />
+        <activity android:name=".view.activity.PublishedSearchActivity" />
+        <activity android:name=".view.activity.PublishedResultsActivity" />
+        <activity android:name=".view.activity.PublishedActivity" />
+        <activity android:name=".view.activity.SignUpActivity" />
         <activity android:name=".view.activity.BooksActivity" />
         <activity android:name=".view.activity.StartActivity" />
         <activity android:name=".view.activity.LoginActivity" />
-        <activity android:name=".view.activity.MainActivity">
+        <activity android:name=".view.activity.MajorActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

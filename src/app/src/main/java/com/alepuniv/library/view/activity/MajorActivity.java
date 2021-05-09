@@ -15,7 +15,7 @@ import com.alepuniv.library.viewmodel.PersonViewModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MajorActivity extends AppCompatActivity {
 
 
     private RecyclerView recyclerMainPersons;
@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerMainPersons = findViewById(R.id.recyclerMainPersons);
+        /*recyclerMainPersons = findViewById(R.id.recyclerMainPersons);
         recyclerMainPersons.setHasFixedSize(true);
 
         persons = new ArrayList<>();
         //persons.add(new Person(1, "Jamil", "Mazen", "Abodan", "Syria", , 125))
         personRecyclerAdapter = new PersonRecyclerAdapter(this, persons);
-        recyclerMainPersons.setAdapter(personRecyclerAdapter);
+        recyclerMainPersons.setAdapter(personRecyclerAdapter);*/
     }
 }
