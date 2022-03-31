@@ -6,6 +6,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.alepuniv.library.R;
 import com.alepuniv.library.api.LibraryAPI;
@@ -30,6 +31,7 @@ public class AuthorActivity extends AppCompatActivity {
             //Show authorResult on the activity
         } catch (IOException e) {
             e.printStackTrace();
+            Toast.makeText(AuthorActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 }

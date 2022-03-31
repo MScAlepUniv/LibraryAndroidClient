@@ -104,6 +104,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
+                    android:id="@+id/cardMainAuthorsAndPublishers"
                     android:layout_height="@dimen/card_view_height"
                     android:layout_weight="2.5"
                     app:cardCornerRadius="20dp"

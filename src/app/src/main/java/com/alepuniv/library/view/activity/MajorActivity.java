@@ -1,8 +1,11 @@
 package com.alepuniv.library.view.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -22,6 +25,9 @@ public class MajorActivity extends AppCompatActivity {
     private List<Person> persons;
     private PersonRecyclerAdapter personRecyclerAdapter;
 
+
+    private CardView cardMainAuthorsAndPublishers;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,5 +40,22 @@ public class MajorActivity extends AppCompatActivity {
         //persons.add(new Person(1, "Jamil", "Mazen", "Abodan", "Syria", , 125))
         personRecyclerAdapter = new PersonRecyclerAdapter(this, persons);
         recyclerMainPersons.setAdapter(personRecyclerAdapter);*/
+
+
+
+        cardMainAuthorsAndPublishers = findViewById(R.id.cardMainAuthorsAndPublishers);
+
+        cardMainAuthorsAndPublishers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MajorActivity.this, AuthorActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+
     }
 }
