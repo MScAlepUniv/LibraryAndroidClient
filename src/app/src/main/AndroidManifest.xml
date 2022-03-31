@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlepUnivLibrary">
         <activity android:name=".view.activity.AuthorInfoActivity"></activity>
-        <activity android:name=".AuthorActivity" />
+        <activity android:name=".view.activity.AuthorActivity" />
         <activity android:name=".view.activity.PublisherInfoActivity" />
         <activity android:name=".view.activity.PublisherActivity" />
         <activity android:name=".view.activity.PublishedCopiesActivity" />

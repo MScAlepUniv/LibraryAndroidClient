@@ -1,4 +1,4 @@
-package com.alepuniv.library;
+package com.alepuniv.library.view.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import retrofit2.Call;
@@ -7,6 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import android.os.Bundle;
 
+import com.alepuniv.library.R;
 import com.alepuniv.library.api.LibraryAPI;
 import com.alepuniv.library.api.RetrofitHelper;
 import com.alepuniv.library.model.entity.Author;
